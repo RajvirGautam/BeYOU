@@ -121,7 +121,147 @@
                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Hoodies</a>
                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Thermals</a>
                                 <a href="#" class="block px-4 py-2 hover:bg-gray-100">Shawls</a>
-    <!-- Add this modal markup right after body tag -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <a href="community.html" class="bg-yellow-400 text-black px-4 py-2 rounded-full hover:bg-yellow-500 transition-colors">
+                            Community Forum
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-700 hover:text-black">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Offers Scroll Section -->
+        <div class="scroll-container bg-gray-100 py-2">
+            <div class="scroll-content">
+                <span class="mx-4">🎉 New Festival Collection - Up to 50% OFF</span>
+                <span class="mx-4">🚚 Free Shipping on Orders Above ₹999</span>
+                <span class="mx-4">🎁 Buy 2 Get 1 Free on Selected Items</span>
+                <span class="mx-4">⚡ Flash Sale - Extra 10% OFF on Winter Wear</span>
+            </div>
+        </div>
+
+        <!-- Best Selling Section -->
+        <section class="max-w-7xl mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold mb-8">Best Sellers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Product Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="product1.jpg" alt="Product" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold">Casual Denim Jacket</h3>
+                        <p class="text-gray-600">₹1,999</p>
+                        <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- Add more product cards here -->
+            </div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="max-w-7xl mx-auto px-4 py-12 bg-gray-800/50 rounded-xl my-8">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-white">New Arrivals</h2>
+                <div class="flex space-x-2">
+                    <button id="prev-new" class="p-2 rounded-full bg-gray-700 hover:bg-yellow-400 text-white hover:text-black transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button id="next-new" class="p-2 rounded-full bg-gray-700 hover:bg-yellow-400 text-white hover:text-black transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="overflow-hidden" id="new-arrivals-container">
+                <div class="flex space-x-6 transition-transform duration-500" id="new-arrivals-slider">
+                    <!-- Add product cards similar to Best Sellers but with 'New Arrival' badge -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Collections -->
+        <section class="max-w-7xl mx-auto px-4 py-12">
+            <h2 class="text-3xl font-bold mb-8 text-white">Featured Collections</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Collection Card 1 -->
+                <div class="relative group overflow-hidden rounded-xl">
+                    <img src="collection1.jpg" alt="Summer Collection" class="w-full h-96 object-cover transform transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-white mb-2">Summer Collection</h3>
+                            <p class="text-gray-200 mb-4">Discover the latest summer trends</p>
+                            <button class="bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transform transition hover:-translate-y-1">
+                                Shop Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more collection cards -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white">
+            <div class="max-w-7xl mx-auto px-4 py-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">About BeYou</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Careers</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Corporate Information</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Help</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-gray-300">Track Your Order</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Returns & Exchanges</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Shipping Information</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-gray-300">Email Us</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Call Us</a></li>
+                            <li><a href="#" class="hover:text-gray-300">Store Locator</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-gray-300">Facebook</a>
+                            <a href="#" class="hover:text-gray-300">Instagram</a>
+                            <a href="#" class="hover:text-gray-300">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal (place outside the mainContent div) -->
     <div id="storeModal" class="modal-overlay">
         <div class="modal">
             <h2 class="text-2xl font-bold mb-6 text-center">Choose Your Experience</h2>
@@ -138,207 +278,28 @@
         </div>
     </div>
 
-    <!-- Navigation Bar -->
-    <nav class="sticky-nav shadow-lg">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <span class="text-3xl font-bold text-black">Be<span class="text-yellow-400">You</span> - wear what you <span class="text-red-500">love</span></span>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <div class="nav-item relative">
-                        <a href="#" class="text-gray-700 hover:text-black">Men</a>
-                        <div class="dropdown rounded-lg mt-2 py-2">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Shirts</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">T-Shirts</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Jeans</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Trousers</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kurtas</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Suits</a>
-                        </div>
-                    </div>
-                    <div class="nav-item relative">
-                        <a href="#" class="text-gray-700 hover:text-black">Women</a>
-                        <div class="dropdown rounded-lg mt-2 py-2">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kurtis</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sarees</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Dresses</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tops</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Jeans</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ethnic Wear</a>
-                        </div>
-                    </div>
-                    <div class="nav-item relative">
-                        <a href="#" class="text-gray-700 hover:text-black">Kids</a>
-                        <div class="dropdown rounded-lg mt-2 py-2">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Boys T-Shirts</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Girls Dresses</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kids Ethnic</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kids Jeans</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Party Wear</a>
-                        </div>
-                    </div>
-                    <div class="nav-item relative">
-                        <a href="#" class="text-gray-700 hover:text-black">Winter Wear</a>
-                        <div class="dropdown rounded-lg mt-2 py-2">
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Jackets</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sweaters</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Hoodies</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Thermals</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Shawls</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <a href="community.html" class="bg-yellow-400 text-black px-4 py-2 rounded-full hover:bg-yellow-500 transition-colors">
-                        Community Forum
-                    </a>
-                    <a href="#" class="text-gray-700 hover:text-black">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-700 hover:text-black">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                        </svg>
-                    </a>
-                    <a href="#" class="text-gray-700 hover:text-black">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Offers Scroll Section -->
-    <div class="scroll-container bg-gray-100 py-2">
-        <div class="scroll-content">
-            <span class="mx-4">🎉 New Festival Collection - Up to 50% OFF</span>
-            <span class="mx-4">🚚 Free Shipping on Orders Above ₹999</span>
-            <span class="mx-4">🎁 Buy 2 Get 1 Free on Selected Items</span>
-            <span class="mx-4">⚡ Flash Sale - Extra 10% OFF on Winter Wear</span>
-        </div>
-    </div>
-
-    <!-- Best Selling Section -->
-    <section class="max-w-7xl mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold mb-8">Best Sellers</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Product Card 1 -->
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                <img src="product1.jpg" alt="Product" class="w-full h-64 object-cover">
-                <div class="p-4">
-                    <h3 class="text-lg font-semibold">Casual Denim Jacket</h3>
-                    <p class="text-gray-600">₹1,999</p>
-                    <button class="mt-4 w-full bg-black text-white py-2 rounded hover:bg-gray-800">Add to Cart</button>
-                </div>
-            </div>
-            <!-- Add more product cards here -->
-        </div>
-    </section>
-
-    <!-- New Arrivals Section -->
-    <section class="max-w-7xl mx-auto px-4 py-12 bg-gray-800/50 rounded-xl my-8">
-        <div class="flex justify-between items-center mb-8">
-            <h2 class="text-3xl font-bold text-white">New Arrivals</h2>
-            <div class="flex space-x-2">
-                <button id="prev-new" class="p-2 rounded-full bg-gray-700 hover:bg-yellow-400 text-white hover:text-black transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                    </svg>
-                </button>
-                <button id="next-new" class="p-2 rounded-full bg-gray-700 hover:bg-yellow-400 text-white hover:text-black transition-colors">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div class="overflow-hidden" id="new-arrivals-container">
-            <div class="flex space-x-6 transition-transform duration-500" id="new-arrivals-slider">
-                <!-- Add product cards similar to Best Sellers but with 'New Arrival' badge -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Collections -->
-    <section class="max-w-7xl mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold mb-8 text-white">Featured Collections</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Collection Card 1 -->
-            <div class="relative group overflow-hidden rounded-xl">
-                <img src="collection1.jpg" alt="Summer Collection" class="w-full h-96 object-cover transform transition-transform duration-500 group-hover:scale-110">
-                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end">
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">Summer Collection</h3>
-                        <p class="text-gray-200 mb-4">Discover the latest summer trends</p>
-                        <button class="bg-yellow-400 text-black px-6 py-2 rounded-full font-semibold hover:bg-yellow-500 transform transition hover:-translate-y-1">
-                            Shop Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more collection cards -->
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">About BeYou</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-gray-300">About Us</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Careers</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Corporate Information</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Help</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-gray-300">Track Your Order</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Returns & Exchanges</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Shipping Information</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-gray-300">Email Us</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Call Us</a></li>
-                        <li><a href="#" class="hover:text-gray-300">Store Locator</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="hover:text-gray-300">Facebook</a>
-                        <a href="#" class="hover:text-gray-300">Instagram</a>
-                        <a href="#" class="hover:text-gray-300">Twitter</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Add this script before closing body tag -->
     <script>
-        // Show modal when page loads
+        // Show modal only when page loads for the first time in a session
         window.addEventListener('DOMContentLoaded', () => {
-            document.getElementById('storeModal').style.display = 'block';
+            // Check if user is coming from community page or has already made a choice
+            const hasChosenExperience = sessionStorage.getItem('hasChosenExperience');
+            const referrer = document.referrer;
+            
+            if (!hasChosenExperience && !referrer.includes('community.html')) {
+                document.getElementById('storeModal').style.display = 'block';
+                document.getElementById('mainContent').classList.add('blur-background');
+            }
         });
 
         function selectStore(type) {
             if (type === 'bestSelling') {
                 document.getElementById('storeModal').style.display = 'none';
-                // Current page stays as is
+                document.getElementById('mainContent').classList.remove('blur-background');
+                // Store that user has made a choice
+                sessionStorage.setItem('hasChosenExperience', 'true');
             } else if (type === 'community') {
-                // Redirect to community forum page
-                window.location.href = '/community.html';
+                sessionStorage.setItem('hasChosenExperience', 'true');
+                window.location.href = 'community.html';
             }
         }
     </script>
