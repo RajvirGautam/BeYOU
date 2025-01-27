@@ -279,13 +279,12 @@
     </div>
 
     <script>
-        // Show modal only when page loads for the first time in a session
+        // Show modal on every page load except when coming from community
         window.addEventListener('DOMContentLoaded', () => {
-            // Check if user is coming from community page or has already made a choice
-            const hasChosenExperience = sessionStorage.getItem('hasChosenExperience');
             const referrer = document.referrer;
             
-            if (!hasChosenExperience && !referrer.includes('community.html')) {
+            // Show modal if not coming from community page
+            if (!referrer.includes('community.html')) {
                 document.getElementById('storeModal').style.display = 'block';
                 document.getElementById('mainContent').classList.add('blur-background');
             }
@@ -295,10 +294,7 @@
             if (type === 'bestSelling') {
                 document.getElementById('storeModal').style.display = 'none';
                 document.getElementById('mainContent').classList.remove('blur-background');
-                // Store that user has made a choice
-                sessionStorage.setItem('hasChosenExperience', 'true');
             } else if (type === 'community') {
-                sessionStorage.setItem('hasChosenExperience', 'true');
                 window.location.href = 'community.html';
             }
         }
