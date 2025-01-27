@@ -81,8 +81,56 @@
         }
 
         .product-grid:hover .product-card:not(:hover) {
-            filter: blur(2px);
-            opacity: 0.9;
+            filter: blur(1px);
+            opacity: 0.95;
+        }
+
+        /* Mobile responsive styles */
+        @media (max-width: 768px) {
+            .nav-item .dropdown {
+                position: static;
+                width: 100%;
+                box-shadow: none;
+                display: none;
+            }
+
+            .nav-item:hover .dropdown {
+                display: block;
+            }
+
+            /* Mobile menu button */
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hidden-mobile {
+                display: none;
+            }
+
+            /* Show mobile menu when active */
+            .mobile-menu-active {
+                display: block !important;
+            }
+
+            /* Adjust product grid for mobile */
+            .product-grid {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 1rem;
+                padding: 0.5rem;
+            }
+
+            .product-card {
+                margin-bottom: 1rem;
+            }
+
+            /* Adjust text sizes for mobile */
+            h2 {
+                font-size: 1.5rem !important;
+            }
+
+            .text-3xl {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -96,7 +144,15 @@
                     <div class="flex items-center">
                         <span class="text-3xl font-bold text-black">Be<span class="text-yellow-400">You</span> - wear what you <span class="text-red-500">love</span></span>
                     </div>
-                    <div class="hidden md:flex items-center space-x-8">
+                    
+                    <!-- Mobile menu button -->
+                    <button class="mobile-menu-btn md:hidden" onclick="toggleMobileMenu()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+
+                    <div class="hidden md:flex items-center space-x-8" id="mobile-menu">
                         <div class="nav-item relative">
                             <a href="#" class="text-gray-700 hover:text-black">Men</a>
                             <div class="dropdown rounded-lg mt-2 py-2">
@@ -197,7 +253,7 @@
 
                 <!-- T-shirt 2 -->
                 <div class="bg-white rounded-lg shadow-md overflow-hidden product-card">
-                    <img src="https://i.pinimg.com/736x/fd/84/4b/fd844b745abb3347c77dd86acc1fa8fe.jpg" alt="T-shirt 2" class="w-full h-64 object-cover">
+                    <img src="https://i.pinimg.com/736x/21/32/95/213295c0655c307a18f7f7704e851927.jpg" alt="T-shirt 2" class="w-full h-64 object-cover">
                     <div class="p-4">
                         <h3 class="text-lg font-semibold">Porsche GT3RS</h3>
                         <p class="text-gray-600">₹799</p>
@@ -370,6 +426,12 @@
             } else if (type === 'community') {
                 window.location.href = 'community.html';
             }
+        }
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('mobile-menu-active');
+            mobileMenu.classList.toggle('hidden');
         }
     </script>
 </body>
