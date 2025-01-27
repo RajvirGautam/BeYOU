@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeYou Clothing</title>
+    <title>BeYou Clothing - Express Your Style</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -61,9 +61,67 @@
             border-radius: 1rem;
             z-index: 2001;
         }
+        
+        /* Add blur effect when modal is active */
+        .blur-background {
+            filter: blur(5px);
+            pointer-events: none;
+            user-select: none;
+        }
     </style>
 </head>
 <body class="bg-gray-50">
+    <!-- Add a wrapper div for all content except the modal -->
+    <div id="mainContent">
+        <!-- Navigation Bar -->
+        <nav class="sticky-nav shadow-lg">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <div class="flex items-center">
+                        <span class="text-3xl font-bold text-black">Be<span class="text-yellow-400">You</span> - wear what you <span class="text-red-500">love</span></span>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-8">
+                        <div class="nav-item relative">
+                            <a href="#" class="text-gray-700 hover:text-black">Men</a>
+                            <div class="dropdown rounded-lg mt-2 py-2">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Shirts</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">T-Shirts</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Jeans</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Trousers</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kurtas</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Suits</a>
+                            </div>
+                        </div>
+                        <div class="nav-item relative">
+                            <a href="#" class="text-gray-700 hover:text-black">Women</a>
+                            <div class="dropdown rounded-lg mt-2 py-2">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kurtis</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sarees</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Dresses</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Tops</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Jeans</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Ethnic Wear</a>
+                            </div>
+                        </div>
+                        <div class="nav-item relative">
+                            <a href="#" class="text-gray-700 hover:text-black">Kids</a>
+                            <div class="dropdown rounded-lg mt-2 py-2">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Boys T-Shirts</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Girls Dresses</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kids Ethnic</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Kids Jeans</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Party Wear</a>
+                            </div>
+                        </div>
+                        <div class="nav-item relative">
+                            <a href="#" class="text-gray-700 hover:text-black">Winter Wear</a>
+                            <div class="dropdown rounded-lg mt-2 py-2">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Jackets</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sweaters</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Hoodies</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Thermals</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Shawls</a>
+    <!-- Add this modal markup right after body tag -->
     <div id="storeModal" class="modal-overlay">
         <div class="modal">
             <h2 class="text-2xl font-bold mb-6 text-center">Choose Your Experience</h2>
